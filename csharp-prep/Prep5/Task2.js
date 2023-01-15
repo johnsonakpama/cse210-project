@@ -33,7 +33,5 @@ class Program
     favoriteFood.pop()
 
     console.log(favoriteFood)
-
-
-    
+  
 } 
