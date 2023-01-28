@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <label for="addend1">Addend1:</label>
+    <input type="text" id="sum" name="addNumber">
+
+    <label for="addend2">Addend2:</label>
+    <input type="text" id="sum" name="addNumber">
+
+    <label for="subtract">Subtract:</label>
+    <input type="text" id="minuend" name="substractNumber">
+
+    <label for="multiply">Multiply</label>
+    <input type="text" id="factor1,factor2" name="multiplyNumber">
+
+    <label for="divide">Divide</label>
+    <input type="text" id="dividend" name="divideNumber">
+
+    <label for="currentYear">CurrentYear</label>
+    <input type="text" id="year" name="currentYear">
+
+    <p id="array"></p>
+
+    <script>
+        function add(number1,number2)
+        {
+            return number1 + number2;
+        }
+        function addNumber()
+        {
+            let addend1 = parseInt(document.querySelector("#addend1").value);
+            let addend2 = parseInt(document.querySelector("#addend2").value);
+            let result = addNumber(addend1,addend2);
+        }
+        document.getElementById("sum").innerHTML = sum;
+        document.getSelector("#addNumber").addEventListener("click",addNumber);
+        
+        function substractNumber()
+        {
+            let Subtract1 = parseInt(230);
+            let subtract2 = parseInt(160);
+            let result = substractNumber(Subtract1,subtract2);
+            return Subtract1 - subtract2;
+        }
+        function multiplyNumber()
+        {
+            let factor1 = parseInt(45);
+            let factor2 = parseInt(25);
+            let result = multiplyNumber(factor1,factor2);
+            return factor1 * factor2;
+        }
+        function divideNumber()
+        {
+            let num1 = parseInt(100);
+            let num2 = parseInt9(5);
+            let result = divideNumber(num1,num2);
+            return num1 / num2;
+        }
+    
+            var currentYear
+
+            const date = newDate();
+
+            const year = date. getFullYear();
+
+            document,write("currentYear"); 
+            
+        const myArray =[1-25];
+
+        document.getElementById("array").innerHTML = Number
+
+        let array = [1-25];
+
+        function odd()
+        {
+          if (i % 2 === 0)
+
+          document.write("then the odd number is ${i}<br>");
+
+          
+
+        }
+        odd();
+
+
+        function even()
+        {
+            for(let i = 0; i <= 25;1++)
+            document.write("then the even number is:${}<br>");
+        }
+        even();
+
+        document.getElementById("sumOfArray").innerHTML = number.reduce(myfunc);
+        function add(total,num)
+        {
+           return sum + x;
+        }
+
+        document.getElementById("multiled").innerHTML = number.map(double).reduce(add);
+
+        function double(x)
+        {
+            return x * 2;
+        }
+        document.getElementById("sumOfMultiled").innerHTML = number.map(x => x *2).reduce(sum,x=>sum +x);
+
+        }
+
+
+
+
+        
+
+
+
+    </script>
+</body>
+</html>

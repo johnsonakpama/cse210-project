@@ -2,15 +2,15 @@ using System;
 
 class Program
 {
-     myName = "Johnson";
-
-    var myDate = newDate();
+    myName = "Johnson";
+     
+    myDate = newDate();
 
     year = myDate. getYear();
 
     console.log(year);
 
-    var myImage = "images/WIN_20210603_135914-Copy.JPG"
+    myImage = "images/WIN_20210603_135914-Copy.JPG"
 
     var favoriteFood = ["potato","rice","yam"]
 
@@ -22,13 +22,13 @@ class Program
 
     console.log(favoriteFood)
 
-    var favoriteFood = []
+    var favoriteFood = ["rice","yam", "bean"]
 
     favoriteFood.shift()
 
     console.log(favoriteFood)
 
-    var favoriteFood = []
+    var favoriteFood = ["yam","garri", "bean"]
     
     favoriteFood.pop()
 
