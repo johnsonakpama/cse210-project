@@ -50,7 +50,7 @@ static string JournalPrompt()
     {
         DateTime now = DateTime.now;
 
-        string currentDateTime = now Tostring("f");
+        string currentDateTime = now ToString("f");
 
         //console .writeLine(now.Tostring("f"));
         //Display Monday, Apirl 03,2023 8:00:00Am
@@ -58,19 +58,19 @@ static string JournalPrompt()
         return currentDateTime;
     
     }
-    static void createJournalFile()
+    static void reateJournalFile();
     //method to check if the txt file is create if not create one
     
     string myjournalFile = "myjournal.txt";
     
-    if(! file Exist.(myjournalFile));
+    if(!file Exist.(myjournalFile));
     {
-        file CreateText(myjournal);
+        File. CreateText(myjournal);
     }
     static void AddjournalEntry()
     //method to add entry to textfile
     {
         string myjournalFile = "myjournal.txt";
-        file.AppendAllText(myjournalFile"");
+        File.AppendAllText(myjournalFile "");
     }
 }

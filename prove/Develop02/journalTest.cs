@@ -1,8 +1,8 @@
-using System
+using System;
 
 class journalTest
 {
-    private string myjournalFile = "my journal.json"
+    private string myjournalFile = "my journal.json";
 
     public void Run()
     {
@@ -12,7 +12,7 @@ class journalTest
     }
     private void DisplayWelcome()
     {
-        console.write("\nwelcome to the journal App!\n");
+        Console.Write("\nwelcome to the journal App!\n");
     }
     private void DisplayChoice()
     {
@@ -24,16 +24,15 @@ class journalTest
         5. Quit
         What would you like to do?";
 
-        console.writeLine(choice);
-        string userInput = console.ReadLine();
-        int action = int.parse(userInput);
-        
-        return action
+        Console.WriteLine(choice);
+        string userInput = Console.ReadLine();
+        int action = int.Parse(userInput);
+        return action;
     }
     private void createJournalFile()
     {
-      if(!file.Exist(myjournalFile))
+      if(!File.Exist(myjournalFile));
 
-      file.create(myjournalFile);  
+      File.Create(myjournalFile);  
     }
 }

@@ -10,7 +10,7 @@ class Program
 
     int action = 0;
 
-    console.write ("\n*******Welcome to the Journal App*******\n");
+    Console.Write ("\n*******Welcome to the Journal App*******\n");
 
     Journal journal = new Journal();
 
@@ -30,15 +30,15 @@ class Program
         string dateTime = GetDateTime();
 
         string prompt = JournalPrompt();
-        journalEntry.entry = new JournalEntry();
+        JournalEntry.Entry = new JournalEntry();
 
-        entry. _dateTime dateInfo;
+        entry. _dateTime DateInfo;
 
         entry. _journalPrompt = prompt;
 
-        console.write(">>";)
+        Console.Write(">>");
 
-        string userEntry = console.ReadLine();
+        string userEntry = Console.ReadLine();
 
         entry._journal.Add(entry);
 
@@ -51,7 +51,7 @@ class Program
 
         // console.writeLine("success choice 2!");
 
-        break:
+        break;
         
         case 3:
 
@@ -64,7 +64,7 @@ class Program
         case 4:
 
         // Save
-        creat journalFile();
+        Create journalFile();
 
         // string AddEntry = journal.Display();
         // AddJournalEntry(AddEntry);
@@ -76,13 +76,13 @@ class Program
 
         // Quit
 
-        console.writeLine("\nThank you for using the journal App!\n");
+        Console.WriteLine("\nThank you for using the journal App!\n");
 
         break;
 
         default:
         
-        console.writeLine("\nSorry that is not valid choice!");
+        Console.WriteLine("\nSorry that is not valid choice!");
         }
     
 
