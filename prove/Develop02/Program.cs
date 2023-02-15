@@ -72,7 +72,7 @@ class Program
 
         break;
 
-        case 5
+        case 5:
 
         // Quit
 

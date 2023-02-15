@@ -1,6 +1,6 @@
 using System
 
-static string JournalPrompt()
+static String JournalPrompt()
 // method to display random journal prompt to use
 {
     var random = new Random();
@@ -21,7 +21,7 @@ static string JournalPrompt()
     };
     int index = random.Next(prompt.count);
     string JournalPrompt = prompt[index];
-    console.writeLine = ("\n{journalPrompt}");
+    Console.WriteLine = ("\n{journalPrompt}");
 
     return journalPrompt;
 
@@ -36,7 +36,7 @@ static string JournalPrompt()
         What would you like to do?";
     }
 
-    console.write(Choice);
+    Console.Write(Choice);
 
     string userInput = console,ReadLine();
 
@@ -58,12 +58,12 @@ static string JournalPrompt()
         return currentDateTime;
     
     }
-    static void reateJournalFile();
+    static void createJournalFile();
     //method to check if the txt file is create if not create one
     
     string myjournalFile = "myjournal.txt";
     
-    if(!file Exist.(myjournalFile));
+    if(! file Exist.(myjournalFile));
     {
         File. CreateText(myjournal);
     }
