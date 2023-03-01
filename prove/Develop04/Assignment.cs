@@ -6,7 +6,7 @@ public class Assignment
     public Assignment(string studentName, string topic)
     {
         _studentName = studentName;
-        -_topic = topic;
+        _topic = topic;
     }
     //Proving getter for our member variables
 
@@ -22,6 +22,6 @@ public class Assignment
 
     public string GetSummary()
     {
-        return _studentName + "_" + _topic
+        return _studentName + "_" + _topic;
     }
 }

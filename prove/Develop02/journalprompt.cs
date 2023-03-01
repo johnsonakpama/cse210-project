@@ -27,7 +27,7 @@ static String JournalPrompt()
 
     static int Choice()
     {
-        string choices = @"Please select one of the following choice
+        string Choices = @"Please select one of the following choice
         1. Write
         2. Display
         3. Load

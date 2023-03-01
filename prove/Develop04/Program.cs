@@ -2,20 +2,60 @@ using System;
 
 class Program
 {
-    static void Main(string[] args)
-    
-    // Create a base "Assignment" Object
+    static void Main(string[] args);
+    {
+        Console. WriteLine("Going to sleep for a second");
+        Thread.sleep(1000);
+        Console.WriteLine("I'm back");
+    }
 
-    Assignment a1 = new Assignment("Samuel Ben","Multipulication");
-    Console.WriteLine (a1.GetSummary());
+    DateTime startTime = DateTime.Now;
+    DateTime futureTime = startTime.AddSeconds(s);
 
-    // Now creat the derived class assignments
+    Thread.Sleep(3000);
 
-    MathAsignment a2 = new MathAsignment("Roberto Rodi","Fraction","7 - 3", "8 - 19");
-    Console.WriteLine(a2.GetSummary());
-    Console.WriteLine(a2._GetHomeworkList());
-    
-    WriteAssignment a3 = new WriteAssignment("Mary Jacob","European History","The cause of the worlr war 11");
-    Console.WriteLine(a3.GetSummary());
-    Console.WriteLine(a3.GetWritingInformation());
+    DateTime currentTime = DateTime.Now;
+
+    if(currentTime< futureTime)
+    {
+        Console.WriteLine("We have not arrived at our future time yet---")
+    }
+    for(int i = 5; i > 0; i--)
+    {
+        Console.WriteLine(i);
+        Thread.Sleep(1000);
+    }
+    List<string>animinationString = new list<string>();
+    animinationString.Add("|");
+    animinationString.Add("/");
+    animinationString.Add("-");
+    animinationString.Add("//");
+    animinationString.Add("|");
+    animinationString.Add("/");
+    animinationString.Add("-");
+    animinationString.Add("//");
+
+    foreach(string s in animinationString)
+    {
+        Console.Write(s);
+        Thread.Sleep(1000);
+        Console.Write("\b \b");
+    }
+    DateTime StartTime = DateTime.Now;
+    DateTime endTime = StartTime.AddSeconds(10);
+     int i=0
+     while(DateTime.Now < endTime)
+     {
+        string s = animinationString[1];
+        Console.Write(s);
+        Thread.Sleep(1000);
+        Console.Write("\b \b");
+        1++;
+     }
+     if(i > animinationString.Count)
+     {
+        i = 0
+     }
+     Console.Write("Done");
+
 }
