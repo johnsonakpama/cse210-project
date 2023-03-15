@@ -1,11 +1,20 @@
 using System;
-class Program
+
+public class checkList: menuOption
 {
-  static void main(string [] args);
+  public checkList()
   {
-    Console.WriteLine.log("\n**** Welcome on board****n/");
+    Console.WriteLine.log(checkList);
+  }  
+  private class checkList()
+  {
+    _checkList = checkList;
   }
-   string filename = "myFile.txt";
+  public virtual void checkList() 
+  {
+       Console.WriteLine.log(listGoals);
+   }
+    string filename = "myFile.txt";
    string [] line = System.IO.File.ReadAllLines(store.txt);
    foreach(string line in lines)
    {
@@ -18,7 +27,9 @@ class Program
     string word = "I want to be reading scripture everyday";
     outputFile.WriteLine($"Your simple goal is {word}");
    }
-   console,writeLine.log();
-  
-}
+   if(checkList < Goals);
+   {
+     Console.WriteLine.log("You have not completed your goal");
+   }
 
+}
