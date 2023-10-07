@@ -1,57 +1,61 @@
 using System IO;
 
+class Program
+{
+    static void main(string[]args)
+}
 DateTime theCurrentTime = DateTime.Now;
 string dateText = theCurrentTime.ToshortDateString();
-
-string fileName = "myFile.txt";
 
 using (StreamWriter outputFile = new StreamWriter(filename))
 
 // you can add text to the file with the writeline method
+public List<Entry>entries = new List<Entry>();
 
-outputFile.writeline("Who was the most intresting person you interacted with today?",
+activityFile.writeline("Who was the most intresting person you interacted with today?",
 "What was the best part of your day?",
 "How did you see hand of the Lord in your life today?",
 "What was the strongest emotion you felt today?",
 "If you had one thing you could do over today, what would it be");
 
-string filename = "myFile.txt";
+Journal journal = new Journal();
+string choice = "0";do
 {
-    string[] line = System.File.ReadAllLine(Filename);
+    Console.WriteLine("Please make a choice from the following option");
+    Console.WriteLine("1. Write");
+    Console.WriteLine("2. Display");
+    Console.WriteLine("3. Load");
+    Console.WriteLine("4. Save");
+    Console.WriteLine("5. Quit");
 
-    foreach(string line in lines)
-    {
-        string[] part = line.split(",");
-        string fileName = part = [0]; 
-    }
+    Console.WriteLine("What would you like to do ?");
+    Choice = Console.ReadLine(); if (choice =="1"){join.AddEntry();}
+    if(choice =="2"){journal.Display();}
+    if(choice =="3"){journal.LoadFile();}
+    if(choice =="4"){journal.SaveFile();}
+    While(choice != "5");
 }
+
+
 public void Display()
 {
     Console.WriteLine($"{_Write} {_Display} {_Load} {_Save} {_Quit}");
 }
-static void LoadFile()
+ public static void LoadFile()
 {
-    Console.WriteLine();
-    // getting current entry info, setting to filename
-    int saveFile = 0
-    string DisplayName = ",";
-    foreach(var F0 in F1.GetFile(""))
-    Save file++;
-    DisplayNameLength = F0.Length;
-2    Console.WriteLine(saveFile.ToString() +"," + DisplayJournal);
+    string toload = console.ReadLine();
+    using (StreamReader string = new StreamReader(toload +""));
+    JournalDate.name = string.ReadLine();
 }
-string toload = Console.ReadLine();
-using StreamReader string = new StreamReader(toload + "");
-JournalDate.Name = string.ReadLine();
-
-static void SaveJournals (charDate JournalDate)
+public static void SaveToFile(List<journals>Record)
 {
-    using(StreamWriter sw = new StreamWriter(JournalDate.Name""))
+    Console.WriteLine("Saving to file...")
+    string filename = "activity.txt";
+    using (StreamWriter outputFile = StreamWriter(filename))
+    foreach (Journal.journal in journals)
     {
-        foreach{System.Reflection.Fileinfo stat in JournalDate.GetType().Getfilies()};
-        sw.WriteLine(stat.GetValue(JournalDate));
-
-
+        outputFile.WriteLine();
     }
-    sw.Close();
 }
+
+
