@@ -7,12 +7,12 @@ class Program
 {
     static void Main(string[] args)
     {
-    int[] validNumber = {1,2};
+    int[] validNumber = {1,2,3,4};
     int action = 0;
-     Console.Write("\n******Welcome to the Memorizes App****\n");
-     memorizes memorizes = new memorizes();
-     while(action!=2);
-     //Ask for user input(1-2)
+     Console.Write("\n******Welcome to the Scripyure App****\n");
+     scripture scripyure = new scripture();
+     while(action!= 4);
+     //Ask for user input(1-4)
      //Call choice
 
      action = choice();
@@ -21,11 +21,11 @@ class Program
      {
         
         case 1:
-        // Display memorizes prompt
+        // Display scripture prompt
 
-        string prompt = MemorizesPrompt();
-        Memorizesprompt.MemorizesPrompt= prompt;
-        Console.WriteLine("");
+        string prompt = ScripturePrompt();
+        Scriptureprompt. ScripturePrompt= prompt;
+        Console.WriteLine(" ");
         Console.ReadLine();
         Console.Clear();
         Console.WriteLine("---");
@@ -33,7 +33,7 @@ class Program
 
         case 2:
         //Quite
-        Console.WriteLine("\nThank you for using the Memorizes APP1\n");
+        Console.WriteLine("\nThank you for using the Scripture APP1\n");
         break;
         default:
         Console.WriteLine("\nSorry that is not valid choice!");
