@@ -8,8 +8,9 @@ public class Assignment
         _studentName = studentName;
         _topic = topic;
     }
-    //Proving getter for our member variables
 
+    // We will provide Getters for our private member variables so they can be accessed
+    // later both outside the class as well is in derived classes.
     public string GetStudentName()
     {
         return _studentName;
@@ -22,6 +23,6 @@ public class Assignment
 
     public string GetSummary()
     {
-        return _studentName + "_" + _topic;
+        return _studentName + " - " + _topic;
     }
 }

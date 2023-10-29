@@ -1,9 +1,9 @@
 using System
 
-static String JournalPrompt()
+static string JournalPrompt;
 // method to display random journal prompt to use
 {
-    var random = new Random();
+    var random = new random();
     
     var random = new List<string>
     {

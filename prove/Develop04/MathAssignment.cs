@@ -1,21 +1,20 @@
 public class MathAssignment : Assignment
 {
     private string _textbookSection;
-    private string _problem;
+    private string _problems;
 
-    // Notice the syntax here that the MathAssignment constructor has 4 parameter and their
-    //it passes 2 of them dirctly to the aaaaaaaaaaaaa "base" constructor which is the "Assignment"
-    // class constructor
-
-    public MathAssignment(string studentName,string topic, string _textbookSection,string problem)
-    : base (studentName,topic)
+    // Notice the syntax here that the MathAssignment constructor has 4 parameters and then
+    // it passes 2 of them directly to the "base" constructor, which is the "Assignment" class constructor.
+    public MathAssignment(string studentName, string topic, string textbookSection, string problems)
+        : base(studentName, topic)
     {
-        // Here we set the MathAsignment specific variable
+        // Here we set the MathAssignment specific variables
         _textbookSection = textbookSection;
-        _problem = problem;
+        _problems = problems;
     }
+
     public string GetHomeworkList()
     {
-        return $"section{_textbookSection}problem{_problem}";
+        return $"Section {_textbookSection} Problems {_problems}";
     }
 }
