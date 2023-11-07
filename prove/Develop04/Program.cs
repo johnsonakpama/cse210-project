@@ -1,61 +1,35 @@
 using System;
+using System.collections;
+
+
 
 class Program
 {
-    static void Main(string[] args);
+    static void Main(string[] args)
     {
-        Console. WriteLine("Going to sleep for a second");
-        Thread.sleep(1000);
-        Console.WriteLine("I'm back");
-    }
-
-    DateTime startTime = DateTime.Now;
-    DateTime futureTime = startTime.AddSeconds(s);
-
-    Thread.Sleep(3000);
-
-    DateTime currentTime = DateTime.Now;
-
-    if(currentTime< futureTime)
+        Console.WriteLine("\n******Welcome to the breathe App******\n"
+        + "1. Breathing\n"
+        + "2. Reflection\n"
+        + "3. Listing\n");
+    Console.WriteLine("Select an activity");
+    string choice = Console.ReadLine();
+    Console.WriteLine("How long would you like to do this activity?");
+    int duration = int.parse(Console.ReadLine());
+    switch (choice)
     {
-        Console.WriteLine("We have not arrived at our future time yet---")
+        
+        case "1":
+            BreathingActivity breathing = new( duration );
+            breathing.Execute();
+            break;
+        case "2":
+            ReflectionActivity reflection = new( duration );
+            breathing.Execute();
+            break;
+        case "3":
+            ListingActivity listing = new( duration );
+            breathing.Execute();
+            break;
     }
-    for(int i = 5; i > 0; i--)
-    {
-        Console.WriteLine(i);
-        Thread.Sleep(1000);
     }
-    List<string>animinationString = new list<string>();
-    animinationString.Add("|");
-    animinationString.Add("/");
-    animinationString.Add("-");
-    animinationString.Add("//");
-    animinationString.Add("|");
-    animinationString.Add("/");
-    animinationString.Add("-");
-    animinationString.Add("//");
-
-    foreach(string s in animinationString)
-    {
-        Console.Write(s);
-        Thread.Sleep(1000);
-        Console.Write("\b \b");
-    }
-    DateTime StartTime = DateTime.Now;
-    DateTime endTime = StartTime.AddSeconds(10);
-     int i=0
-     while(DateTime.Now < endTime)
-     {
-        string s = animinationString[1];
-        Console.Write(s);
-        Thread.Sleep(1000);
-        Console.Write("\b \b");
-        1++;
-     }
-     if(i > animinationString.Count)
-     {
-        i = 0
-     }
-     Console.Write("Done");
-
 }
