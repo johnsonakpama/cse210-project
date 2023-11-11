@@ -1,31 +1,42 @@
 using System;
 
-static string scriptur()
+class scriptur()
 {
-    private string scripture = "myScriture";
-    _reference Reference
-    _Word. List<word>;
-     {
-        "JOHN 3:16 = For God so loved the world that he gave his only begotten Son that whosoever believeth in him should not perish but have everlasting life",
-        "PROVERBS 3: 5-6: 5 = Trust in the Lord with all thine heart and lean not unto thine own understanding. 6 = In all thy ways acknowledge him, and he shall direct thy paths.",
-        "PSALM 23: 1 = The Lord is my shepherd; I shall not want."
-    };
+    private string _scripture; 
+    private Reference _reference;
+    private List<Word> _word = new List<Word>()
 
-    public void Run()
+    public Scripture(text, reference)
     {
-    _HideWord;
-    _GetRevealText;
-    _IsCompletelyHidden;
+       _scripture = text;
+       _reference = reference;
+       string[] stringWord = text.Split();
+       foreach(stringWord word in stringWord);
+            Word wordobj = new Word(stringWord);
+            _words.Add(wordobj);
     }
 
-    static int choice()
+    public DisplayScripture()
     {
-        string choices = @"Please select one of the following choices";
-        Console.write("press 'Enter' to hide more word, type 'Reveal' to reveal a word or type 'quit' to finish");
+        foreach(word d in _words);
+        Console.Write(word.GetWord() + " ");
+    }
+    public WordsHidden()
+    {
+        foreach(word w in _words);
+            if(word.GetHidden() == false);
+                return false;
+        return true;
+    }
+    public HideWord()
+    {
+        random = new random();
+        index = 0;
+    do
+        index = random.Next(_words.count);
 
-        Console.Write(choice);
-        string userInput = Console.ReadLine();
-        int action = int.Parse(userInput);
-        return action;
+    while:
+        _word[index].GetHidden() == true;
+        _word[index].Hide();
     }
 }

@@ -2,25 +2,22 @@ using System;
 
 class Rrference
 {
-private string myReferenceFile = "my Reference.json"; 
+private string _referenceString; 
 
-public void Run()
+public Reference(string book, string chapter, string verse)
 {
-    _book: string;
-    _chapter: int;
-    _verseStart: int;
-    _verseEnd: int;
+    _referencestring = $"{book} {chapter}:{verse}";
 }
-private void DisplayChoice()
-{
-    string DisplayChoice = @"Please select one of the following";
-    Console.Write("press 'Enter' to continue or type 'Quit' to finish");
+public Reference(string book, string chapter, string verse, string endverse)
 
-    Console.WriteLine(choice);
-    string userInput = Console.ReadLine();
-    int action = int.Parse(userInput);
-    return action;
+{
+    _referencestring = $"{book} {chapter}:{verse}-{endverse}";
+
 }
 
+public string GetReferenceString()
+{
+    return _referenceString;
+}
 
 }
