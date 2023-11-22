@@ -1,24 +1,38 @@
 using System;
-class Program
+public class EternalQuest
 {
-  static void main(string [] args);
+  privaten List<Goal> _goal = new List<Goal>();
+
+  public void AddGoal (Goal goal)
   {
-    Console.WriteLine.log("\n**** Welcome on board****n/");
+    _goal. Add(goal);
+    Console. WriteLine($"Added goal:{goal Name}");
   }
-   string filename = "myFile.txt";
-   string [] line = System.IO.File.ReadAllLines(store.txt);
-   foreach(string line in lines)
-   {
-    string [] parts = line.split(",");
-   }
-   class  fileName = "myFile.txt";
-   using streamWriter outputFile = new streamWriter(fileName)
-   {
-    outputFile.WriteLine("");
-    string word = "I want to be reading scripture everyday";
-    outputFile.WriteLine($"Your simple goal is {word}");
-   }
-   console,writeLine.log();
+
+public void RecordEvent(string name)
+{
+  foreach (Goal goal in _goal)
+  {
+    if (goal.Name == name)
+    {
+      goal.RecordEvent();
+      return ;
+    }
+    Console.WriteLine($"Goal not vaild: {name}");
+  }
   
+}
+public void DisplayStatus()
+{
+  int totalPoints = 0;
+  Console.WriteLine("Current Goals:");
+
+  foreach(Goal goal in _goal)
+  {
+    Console.WriteLine(goals.GetStatus());
+    totalPoints += goal.points;
+  }
+  Console.WriteLine($"Total points: {totalPoints}");
+}
 }
 
