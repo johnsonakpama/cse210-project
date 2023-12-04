@@ -1,6 +1,6 @@
 using System;
 
-class scriptur()
+class scripture
 {
     private string _scripture; 
     private Reference _reference;
@@ -12,8 +12,8 @@ class scriptur()
        _reference = reference;
        string[] stringWord = text.Split();
        foreach(stringWord word in stringWord);
-            Word wordobj = new Word(stringWord);
-            _words.Add(wordobj);
+        Word wordobj = new Word(stringWord);
+        _words.Add(wordobj);
     }
 
     public DisplayScripture()

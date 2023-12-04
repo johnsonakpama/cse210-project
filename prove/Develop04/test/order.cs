@@ -26,10 +26,7 @@ namespace OrderMangement
         private string _Country;
         private decimal _TotalSpent;
     }
-    public Customer():base();
-    {
 
-    }
     public class Order
     {
         public Product product;
@@ -42,16 +39,16 @@ namespace OrderMangement
         Customer = customer;
         Quantity = quantity;
     }
-    public decimal GetTotalPrice()
+    public int GetTotalPrice()
     {
-        decimal totalPrice = Product.price*Quantity;
+        int totalPrice = Product.price*Quantity;
         Customer.TotalSpect += totalPrice;
         return totalPrice;
     }
-    public decimal GetShippingFee()
+    public int GetShippingFee()
     {
-        const decimal feeWithinUsa = $5;
-        const decimal feeOutsideUsa =$35;
+        const int feeWithinUsa = $5;
+        const int feeOutsideUsa =$35;
     }
     if (Customer.country == "USA")
     {

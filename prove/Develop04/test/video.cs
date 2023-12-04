@@ -35,14 +35,3 @@ public abstract class video
 
 
 }
-public class YouTubeVideo:Video
-{
-    public YouTubeVideo(string author,string title,TimeSpan runningTime):base(author,title,runningTime)
-    {
-
-    }
-    public override void Play()
-    {
-        Console.WriteLine($"Playing{Title}by{Author} ({RunningTime})");
-    }
-}
