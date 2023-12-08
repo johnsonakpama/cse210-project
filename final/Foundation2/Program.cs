@@ -13,7 +13,7 @@ class Program
     public Order1()
     (
         _product("table");
-        _quantity = 5
+        _quantity = $5
         _price = $40
 
         _customer("James Umar")

@@ -57,7 +57,7 @@ public class StationaryBike:Activity
 }
 public class Swimming:Activity
 {
-    private _poolLength;
+    private string _poolLength;
 
     public Swimming(double distance,TimeSpan duration,double poolLength):base(distance,duration)
     {

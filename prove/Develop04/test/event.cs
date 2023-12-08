@@ -2,10 +2,10 @@ using System;
 
 public class Event
 {
-     private string _title;
+    private string _title;
     private string _description;
     private string _date;
-    private string _dime;
+    private string _time;
     private string _address;
 
     public Event(string title,string description,string date,string time,string address)
@@ -28,10 +28,12 @@ public class Event
     {
         return _date;
     }
+
     public string GetTime()
     {
         return _time;
     }
+
     public string GetAddress()
     {
         return _address;
@@ -48,7 +50,7 @@ public class Event
         public Lecture(string title,string description,string date,string time,string address, string speaker,int capacity):base(title,description,date,time,address)
         {
             _speaker = speaker;
-            _sapacity = capacity;
+            _capacity = capacity;
 
         }
         public string GetSpeaker()
@@ -61,11 +63,11 @@ public class Event
         }
 
     }
-    public class Rececption:Event
+    public class Reception:Event
     {
         private string _rsvpEmail;
 
-        public Rececption(string title,string decription,string date,string time,string address,string rsvpEmail):base(title,description,date,time,address)
+        public Reception(string title,string decription,string date,string time,string address,string rsvpEmail):base(title,description,date,time,address)
         {
             _rsvpEmail = rsvpEmail;
         }
@@ -81,7 +83,7 @@ public class Event
 
         public OutdoorGathering(string title,string description,string date,string time string address,string weatherForecast):base(title,description,date,time,address)
         {
-            weatherForecast = weatherForecast;
+            _weatherForecast = weatherForecast;
         }
         public string GetWeatherForecast()
         {
