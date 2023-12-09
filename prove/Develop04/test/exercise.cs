@@ -12,7 +12,7 @@ public abstract class Activity
     }
     public virtual double GetDistance()
     {
-        return _distance
+        return _distance;
     }
     public virtual GetSpeed()
     {
@@ -38,7 +38,7 @@ public class Running :Activity
         return $"Ran{_distance} mile with{_elevationGain} feet of elevation gain in {_duration}";
     }
 }
-public class StationaryBike:Activity
+public class StationaryBike : Activity
 {
     private double _resistance;
 
@@ -55,7 +55,7 @@ public class StationaryBike:Activity
         return $"Biked{_distance} mile with{_resistance} resistance in{_duration}";
     }
 }
-public class Swimming:Activity
+public class Swimming : Activity
 {
     private string _poolLength;
 

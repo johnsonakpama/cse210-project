@@ -30,8 +30,8 @@ class Program
     Console.WriteLine(lecture.GetFullLecture());
 
     OutdoorGathering outdoorGathering = new OutdoorGathering();
-    outdoorGathering.SetWeatherForecast("31/13");
-    outdoorGathering.SetWeatherStatement("Haze");
+    outdoorGathering.SetWeatherForecast("");
+    outdoorGathering.SetWeatherStatement("Haze 37/13");
 
     Console.WriteLine(weatherForecast.GetFullWeatherForecast());
 
